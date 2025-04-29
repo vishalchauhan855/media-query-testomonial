@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +16,62 @@
     padding: 0;
   
     
+}
+
+
+
+header {
+    background:white;
+    color:#333;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-menu > li {
+    display: inline-block;
+    position: relative;
+}
+
+.nav-menu > li > a {
+    color:#333;
+    text-decoration: none;
+    padding: 5px 20px;
+    display: block;
+}
+
+.nav-menu > li:hover > a {
+    background: #555;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background: #444;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+}
+
+.dropdown li {
+    width: 200px; 
+}
+
+.dropdown li a {
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-menu > li:hover .dropdown {
+    display: block;
 }
 
 
@@ -65,13 +122,38 @@
     font-style: italic;
 }
 
+.foot{
+    display: flex;
+    justify-content: center;
+    color:#333;
+    background:white;
+    padding: 20px 0px;
+}
 
 
 @media(max-width: 600px) {
+
+    header{
+        flex-direction: column;
+        display: flex;
+         
+        nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        }
+
+        ul{
+            display: flex;
+            gap: 0;
+        
+        }
+    }
     .testimonial-card {
         padding: 15px;
     }
-
+    
     .testimonial-text {
         font-size: 1em;
     }
@@ -96,6 +178,24 @@
     <title>Testimonial Section</title>
 </head>
 <body> 
+    <header>
+        <h1>My Website</h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li>
+                    <a href="#services">Services</a>
+                    <ul class="dropdown">
+                        <li><a href="#web-design">Web Design</a></li>
+                        <li><a href="#seo">SEO</a></li>
+                        <li><a href="#marketing">Marketing</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
         <!-- <div class="test">Testimonial's</div> -->
    <div class="testimonial-container">
       
@@ -114,6 +214,12 @@
             <p class="testimonial-author"><a href="#">- John Doe</a></p>
         </div>
     </div>
+
+    <footer>
+        <div class="foot">
+            &#169; all rights recived
+        </div>
+    </footer>
 </body>
 </html>
 </body>
