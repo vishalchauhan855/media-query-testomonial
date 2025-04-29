@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f4f4f4; */
+    margin: 0;
+    background-color: #333;
+    /* padding: 20px; */
+    padding: 0;
+  
+    
+}
+
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+
+    img{
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    a{
+        text-decoration: none;
+        color:blue;
+    }
+
+    p{
+        font-family:'Times New Roman', Times, serif;
+        
+    }
+}
+
+.testimonial-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+
+}
+
+.testimonial-text {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.testimonial-author {
+    font-size: 1em;
+    color: #555;
+    font-style: italic;
+}
+
+
+
+@media(max-width: 600px) {
+    .testimonial-card {
+        padding: 15px;
+    }
+
+    .testimonial-text {
+        font-size: 1em;
+    }
+
+    .testimonial-author {
+        font-size: 0.9em;
+    }
+
+    .testimonial-container{
+        flex-direction: column;
+        display: flex;
+    }
+}
+</style>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Testimonial Section</title>
+</head>
+<body> 
+        <!-- <div class="test">Testimonial's</div> -->
+   <div class="testimonial-container">
+      
+        <div class="testimonial-card">
+            <div class="img-style">
+                <img src="person.jpg" alt="">
+            </div>
+            <p class="testimonial-text">"This product has changed my life! The quality is outstanding and the customer service is exceptional."</p>
+            <p class="testimonial-author"><a href="#">- Thomas lee</a></p>
+        </div>
+        <div class="testimonial-card">
+            <div class="img-style">
+                <img src="person2.jpg" alt="">
+            </div>
+            <p class="testimonial-text">"This product has changed my life! The quality is outstanding and the customer service is exceptional."</p>
+            <p class="testimonial-author"><a href="#">- John Doe</a></p>
+        </div>
+    </div>
+</body>
+</html>
+</body>
+</html>
